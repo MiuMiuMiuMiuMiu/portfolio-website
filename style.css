@@ -80,18 +80,15 @@ main {
     color: black;
 }
 
-#section-skills>h1 {
-    padding: 60px 0px 20px 0px;
-    margin: 0;
-}
-
 #section-skills>div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-
+    text-align: center;
 }
+
+#section-skills>div>p {
+    display: inline-block;
+    padding: 0px 50px 0px 0px;
+}
+
 
 /*PROJECTS*/
 
@@ -158,8 +155,6 @@ h2 {
 #section-contact>a:hover {
     transform: scale(1.05);
 }
-
-
 
 /*FOOTER*/
 
