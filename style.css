@@ -57,6 +57,10 @@ main {
     font-size: 3em;
 }
 
+#title>h2 {
+    padding-top: 20px;
+}
+
 /*Intro*/
 #intro {
     display: flex;
@@ -99,8 +103,7 @@ main {
     margin-bottom: 60px;
 }
 
-#section-projects>h1,
-h2 {
+#section-projects>h1,h2 {
     margin: 0;
     padding-top: 60px;
 }
@@ -176,4 +179,15 @@ footer>p {
 hr {
     width: 80%;
     border-top: 2px solid black;
+}
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+    .card {
+        margin-bottom: 50px;
+    }
+
+    #section-projects> h2 {
+        padding-top: 0px;
+    }
 }
