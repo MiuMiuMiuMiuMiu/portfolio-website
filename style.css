@@ -7,10 +7,10 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "nav" 
-    "main"
-    "footer";
+    grid-template-areas:
+        "nav"
+        "main"
+        "footer";
     height: 100%;
 }
 
@@ -27,7 +27,7 @@ nav {
     z-index: 1;
 }
 
-nav > a {
+nav>a {
     color: white;
     text-decoration: none;
     padding: 0% 3% 0% 3%;
@@ -53,7 +53,7 @@ main {
     top: 150px;
 }
 
-#title > h1 {
+#title>h1 {
     font-size: 3em;
 }
 
@@ -68,7 +68,7 @@ main {
     padding: 0% 3% 0% 3%;
 }
 
-#intro > p {
+#intro>p {
     margin: 10;
 }
 
@@ -80,17 +80,17 @@ main {
     color: black;
 }
 
-#section-skills > h1 {
+#section-skills>h1 {
     padding: 60px 0px 20px 0px;
     margin: 0;
 }
 
-#section-skills > div {
+#section-skills>div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    
+
 }
 
 /*PROJECTS*/
@@ -102,7 +102,8 @@ main {
     margin-bottom: 60px;
 }
 
-#section-projects > h1, h2 {
+#section-projects>h1,
+h2 {
     margin: 0;
     padding-top: 60px;
 }
@@ -116,62 +117,62 @@ main {
     margin-left: 10px;
 }
 
-.card > a > img {
+.card>a>img {
     transition: transform .2s;
 }
 
-.card > a > img:hover {
+.card>a>img:hover {
     transform: scale(1.05);
 }
 
 /*Contact*/
 
 #section-contact {
-    height: 90vh;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
-#section-contact > h1 {
+#section-contact>h1 {
     margin: 0;
     padding: 60px 0px 20px 0px;
 }
 
-#section-contact > p:nth-child(3){
+#section-contact>p:nth-child(3) {
     padding-bottom: 20px;
 }
 
-input[type=text], input[type=email], textarea {
-    width: 20%;
-    padding: 12px 12px;
-}
-#name, #email {
-    display: inline;
-    margin-bottom: 15px;
-}
-
-#subject, textarea {
-    width: 40.5%;
-    display: block;
+#section-contact>a {
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 60px;
+    text-decoration: none;
+    border-radius: 25px;
 }
 
-textarea {
-    height: 25%;
+#section-contact>a:link {
+    color: white;
 }
+
+#section-contact>a:hover {
+    transform: scale(1.05);
+}
+
+
 
 /*FOOTER*/
 
 footer {
     grid-area: footer;
-    display: flex;    
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: black;
 }
 
-footer > p {
+footer>p {
     color: white;
 }
 
@@ -181,4 +182,3 @@ hr {
     width: 80%;
     border-top: 2px solid black;
 }
-
