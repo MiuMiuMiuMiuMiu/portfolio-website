@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: 'BIZ UDMincho', serif;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav" 
+    "main"
+    "footer";
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    grid-area: nav;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 1% 0% 1% 0%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 0% 3% 0% 3%;
+}
+
+main {
+    grid-area: main;
+}
+
+/*Section HOME*/
+#section-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*Title*/
+#title {
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 150px;
+}
+
+#title > h1 {
+    font-size: 3em;
+}
+
+/*Intro*/
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 1.1em;
+    position: relative;
+    top: 170px;
+    padding: 0% 3% 0% 3%;
+}
+
+#intro > p {
+    margin: 10;
+}
+
+/*SKILLS*/
+#section-skills {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: black;
+}
+
+#section-skills > h1 {
+    padding: 60px 0px 20px 0px;
+    margin: 0;
+}
+
+#section-skills > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+/*PROJECTS*/
+
+#section-projects {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+#section-projects > h1, h2 {
+    margin: 0;
+    padding-top: 60px;
+}
+
+#project-cards {
+    padding: 30px 0px 0px 0px;
+}
+
+.card {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.card > a > img {
+    transition: transform .2s;
+}
+
+.card > a > img:hover {
+    transform: scale(1.05);
+}
+
+/*Contact*/
+
+#section-contact {
+    height: 90vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section-contact > h1 {
+    margin: 0;
+    padding: 60px 0px 20px 0px;
+}
+
+#section-contact > p:nth-child(3){
+    padding-bottom: 20px;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 20%;
+    padding: 12px 12px;
+}
+#name, #email {
+    display: inline;
+    margin-bottom: 15px;
+}
+
+#subject, textarea {
+    width: 40.5%;
+    display: block;
+}
+
+textarea {
+    height: 25%;
+}
+
+/*FOOTER*/
+
+footer {
+    grid-area: footer;
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+footer > p {
+    color: white;
+}
+
+/*HR*/
+
+hr {
+    width: 80%;
+    border-top: 2px solid black;
+}
+
