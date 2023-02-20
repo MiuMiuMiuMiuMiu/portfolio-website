@@ -127,6 +127,7 @@ main {
 .card>a>img {
     height: 300px;
     transition: transform .2s;
+    border: black 1px solid;
 }
 
 .card>a>img:hover {
