@@ -148,7 +148,12 @@ main {
     padding: 60px 0px 20px 0px;
 }
 
-#section-contact>p:nth-child(3) {
+#section-contact>h1 {
+    margin: 0;
+    padding: 60px 0px 20px 0px;
+}
+
+#section-contact>p {
     padding-bottom: 20px;
 }
 
@@ -193,7 +198,7 @@ hr {
 /* Tablet */
 @media screen and (max-width: 900px) {
     .card {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     #section-projects> h2 {
