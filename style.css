@@ -82,15 +82,25 @@ main {
     margin-right: auto;
     width: 80%;
     color: black;
+    background-color: aquamarine;
 }
 
 #section-skills>div {
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-#section-skills>div>p {
-    display: inline-block;
-    padding: 0px 50px 0px 0px;
+#section-skills>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    color: white;
+    background-color: red;
+    border-radius: 40px;
 }
 
 
