@@ -2,21 +2,20 @@
 
 .header {
   background-color: #333;
-  padding: 10px;
   overflow: hidden;
+  
 }
 
 .header a {
   float: left;
   color: #f2f2f2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-  display: block;
+  font-size: 18px;
+  height: 28px;
 }
 
-.navigation > a{
+.navigation > a {
   display: block;
 }
 
@@ -28,27 +27,33 @@
   color: white;
 }
 
-/* Hamburger menu */
-.header a.icon {
-  display: block;
-  position: absolute;
-  right: 0;
-  display: none;
+/* Icon */
+.icon {
+  height: 28px;
 }
 
-.hide {
-  display: none;
+.burger-menu {
+  height: 28px;
 }
 
-.show {
-  display: block;
+/*Positioning*/
+.float-right {
+  float: right !important;
 }
 
+/*Mobile*/
 @media (max-width:720px) {
   .header a {
+    padding: 14px 16px;
+  }
+  .navigation a {
     clear: both;
   }
-  .header a.icon {
-    display: block;
+  .navigation > a {
+    background-color: red;
+    width: 100%;
+  }
+  .navigation > a:hover {
+    background-color: grey;
   }
 }
