@@ -12,7 +12,6 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 18px;
-  height: 28px;
 }
 
 .navigation > a {
@@ -32,10 +31,6 @@
   height: 28px;
 }
 
-.burger-menu {
-  height: 28px;
-}
-
 /*Positioning*/
 .float-right {
   float: right !important;
@@ -43,17 +38,15 @@
 
 /*Mobile*/
 @media (max-width:720px) {
-  .header a {
-    padding: 14px 16px;
-  }
   .navigation a {
     clear: both;
   }
   .navigation > a {
-    background-color: red;
+    background-color:lightslategrey;
     width: 100%;
   }
   .navigation > a:hover {
-    background-color: grey;
+    color: white;
+    background-color: darkslategrey;
   }
 }
