@@ -3,44 +3,44 @@ function Skills() {
     const skills = [
         {
             name: "React",
-            url: "react-logo.png",
+            image: "logo192.png",
             alt: "React logo"
         },
         {
             name: "Vue",
-            url: "vue-logo.png",
+            image: "logo/vue-logo.png",
             alt: "Vue logo"
         },
         {
             name: "JavaScript",
-            url: "js-logo.png",
+            image: "logo/js-logo.png",
             alt: "JavaScript logo"
         },
         {
             name: "Python",
-            url: "python-logo.png",
+            image: "logo/python-logo.png",
             alt: "Python logo"
         },
         {
             name: "SQL",
-            url: "database-logo.png",
+            image: "logo/database-logo.png",
             alt: "Database logo"
         },
         {
             name: "HTML",
-            url: "html-logo.png",
+            image: "logo/html-logo.png",
             alt: "HTML logo"
         },
         {
             name: "CSS",
-            url: "css-logo.svg",
+            image: "logo/css-logo.svg",
             alt: "CSS logo"
         }
     ];
 
     const content = skills.map((skill) =>
         <div className="card" key={skill.name}>
-            <img src={skill.url} alt={skill.alt}></img>
+            <img src={skill.image} alt={skill.alt}></img>
             <div className="container">
                 <h3><b>{skill.name}</b></h3>
             </div>

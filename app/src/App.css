@@ -77,7 +77,6 @@
   background-color: black;
   color: white;
   text-align: center;
-  padding: 20px 0px;
 }
 
 #skills > h1 {
@@ -96,6 +95,70 @@
 
 .skills-container > .card > img {
   height: 130px;
+}
+
+/*Projects*/
+
+#projects {
+  height: auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 100px 0px;
+}
+
+#projects > h1 {
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects-container > .card {
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  width: 300px;
+  margin: 0px 20px;
+  opacity: 1;
+} 
+
+.projects-container > .card > a > img {
+  object-fit: cover;
+  width: 300px;
+  height: 250px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.projects-container > .card > .overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projects-container > .card:hover {
+  transform: translateY(-10px);
+} 
+
+.projects-container > .card > .container {
+  padding: 25px;
+  text-align: left;
+  height: 130px;
+  position: relative;
+} 
+
+.projects-container > .card > .container > a {
+  position: absolute;
+  bottom: 15px;
 }
 
 /*Mobile*/
