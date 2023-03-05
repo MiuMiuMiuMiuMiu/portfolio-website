@@ -1,12 +1,12 @@
-function Projects() {
+function PersonalProjects() {
 
     const projects = [
         {
-            name: "Holiday",
+            name: "Holidays",
             url: "https://miumiumiumiumiu.github.io/holiday/",
             image: "projects/holidays.jpg",
             alt: "Image of a calendar page",
-            description: "Show current and upcoming holidays in different countries. Made with React, JavaScript, Axios, React Bootstrap and a Holiday API by Nager.Date.",
+            description: "Shows current and upcoming holidays in different countries. Made with React, JavaScript, Axios, React Bootstrap and a Holiday API by Nager.Date.",
             github: "https://github.com/MiuMiuMiuMiuMiu/holiday"
         },
         {
@@ -49,4 +49,4 @@ function Projects() {
     )
 }
 
-export default Projects;
+export default PersonalProjects;

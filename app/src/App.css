@@ -7,23 +7,22 @@ main {
 .header {
   background-color: white;
   overflow: hidden;
-  border-bottom: 1px solid black;
 }
 
 .header a {
   float: left;
-  color: black;
+  color: black !important;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 18px;
 }
 
-.navigation > a {
-  display: block;
+.header a:hover {
+  color: aqua !important;
 }
 
-.header a:hover {
-  color: blue;
+.navigation > a {
+  display: block;
 }
 
 /* Icon */
@@ -151,13 +150,12 @@ main {
 }
 
 .projects-container > .card > .image-container:hover > a > img {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 .projects-container > .card > .image-container:hover .overlay {
   opacity: 1;
 }
-
 
 .projects-container > .card > .overlay {
   transition: .5s ease;
@@ -171,15 +169,68 @@ main {
 }
 
 .projects-container > .card > .container {
-  padding: 25px;
+  padding: 10px 20px;
   text-align: left;
-  height: 130px;
+  height: 150px;
   position: relative;
 } 
 
 .projects-container > .card > .container > a {
   position: absolute;
   bottom: 15px;
+}
+
+/*Group projects*/
+
+#group-projects {
+  height: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.showcase {
+  margin: 10px 20px;
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.showcase img {
+  width: 100%;
+}
+
+.showcase h2 {
+  margin: 30px 10px;
+  text-align: center;
+}
+
+.showcase p {
+  margin: 10px 5px;
+  line-height: 1.5;
+}
+
+.showcase a:link, a:visited {
+  color: white;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 75%;; /* 16:9 Aspect Ratio */
+}
+
+.iframe-container > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /*Contact*/
@@ -196,14 +247,13 @@ main {
 }
 
 #contact a:link, a:visited {
-  color: black;
   padding: 20px 20px;
   text-decoration: none;
   display: inline-block;
   transition: all .2s ease-in-out;
 }
 
-#contact a:hover {
+#contact > a:hover {
   transform: scale(1.5);
 }
 
@@ -218,6 +268,16 @@ main {
   padding: 20px;
 }
 
+/*Laptop*/
+
+
+@media (max-width:1300px) {
+  /*Group projects*/
+  .showcase {
+    width: 60%;
+  }
+}
+
 /*Mobile*/
 @media (max-width:720px) {
   /*Header*/
@@ -225,10 +285,14 @@ main {
     clear: both;
     background-color:white;
     width: 100%;
-    border-top: 1px black solid;
+    background-color: lightgray;
   }
   .navigation > a:hover {
-    color: blue;
-    background-color: darkgray;
+    color: black !important;
+    background-color: rgb(198, 198, 198);
+  }
+  /*Group projects*/
+  .showcase {
+    width: 80%;
   }
 }
