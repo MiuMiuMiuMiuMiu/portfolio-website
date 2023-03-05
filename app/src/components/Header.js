@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function Header(props) {
+function Header() {
 
     const [width, setWidth] = useState(window.innerWidth); //Set state of screen
     const [open, isOpen] = useState(false); //Set state of hamburger menu, default is closed
@@ -27,16 +27,16 @@ function Header(props) {
 
     return (
         <div className="header">
-            <a className="active" href="#home">Home</a>
+            <a href="#home">Home</a>
             {/* If NOT mobile, display nav */}
             {width >= 720
                 ?
-                <div className="navigation">
-                    <a href="#about-me">About me</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
+                    <div className="navigation">
+                        <a href="#about-me">About me</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
                 :
                 <>
                     <a href="#burgerMenu" className="burger-menu float-right" onClick={toggleNav}>
@@ -51,11 +51,8 @@ function Header(props) {
                             <a href="#contact">Contact</a>
                         </div>
                     }
-                    
                 </>
             }
-
-
         </div>
     );
 }
