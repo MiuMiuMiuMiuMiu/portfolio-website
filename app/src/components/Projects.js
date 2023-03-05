@@ -22,9 +22,15 @@ function Projects() {
     const content = projects.map((project) =>
         
             <div className="card" key={project.name}>
-                <a href={project.url}>
-                    <img src={project.image} alt={project.alt}></img>
-                </a>
+                <div className="image-container">
+                    <a href={project.url}>
+                        <img src={project.image} alt={project.alt}></img>
+                    </a>
+                    <p className="overlay">
+                        Show project
+                    </p>
+                </div>
+                
                 <div className="container">
                     <h3><b>{project.name}</b></h3>
                     <p>{project.description}</p>

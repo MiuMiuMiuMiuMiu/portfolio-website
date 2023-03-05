@@ -124,19 +124,40 @@ main {
   width: 300px;
   margin: 10px 20px;
   opacity: 1;
+  transition: all .2s ease-in-out;
 } 
 
 .projects-container > .card:hover {
   transform: translateY(-10px);
 } 
 
-.projects-container > .card > a > img {
+.projects-container > .card > .image-container > a > img {
   object-fit: cover;
   width: 300px;
   height: 250px;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
 }
+
+.projects-container > .card > .image-container > .overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projects-container > .card > .image-container:hover > a > img {
+  opacity: 0.3;
+}
+
+.projects-container > .card > .image-container:hover .overlay {
+  opacity: 1;
+}
+
 
 .projects-container > .card > .overlay {
   transition: .5s ease;
@@ -175,18 +196,19 @@ main {
 }
 
 #contact a:link, a:visited {
-  background-color: lightblue;
   color: black;
   padding: 20px 20px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 30px;
+  transition: all .2s ease-in-out;
 }
 
-#contact a:hover, a:active {
-  background-color: lightseagreen;
-  color: white;
+#contact a:hover {
+  transform: scale(1.5);
+}
+
+.logo {
+  height: 30px;
 }
 
 /*Footer*/
@@ -194,10 +216,6 @@ main {
 #footer {
   text-align: center;
   padding: 20px;
-}
-
-.logo {
-  height: 30px;
 }
 
 /*Mobile*/

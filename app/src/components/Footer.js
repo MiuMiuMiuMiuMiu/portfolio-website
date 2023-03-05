@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <div id="footer">
-            <p>Made by Thiptida Luengprakarn.</p>
+            <p>Made by Thiptida Luengprakarn</p>
         </div>
     )
 }
