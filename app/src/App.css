@@ -1,5 +1,9 @@
-/*Header*/
+main {
+  background-color: black;
+  color: white;
+}
 
+/*Header*/
 .header {
   background-color: white;
   overflow: hidden;
@@ -74,8 +78,6 @@
 
 #skills {
   height: auto;
-  background-color: black;
-  color: white;
   text-align: center;
 }
 
@@ -101,10 +103,8 @@
 
 #projects {
   height: auto;
-  background-color: black;
-  color: white;
   text-align: center;
-  padding: 100px 0px;
+  margin-top: 60px;
 }
 
 #projects > h1 {
@@ -122,8 +122,12 @@
   background-color: white;
   color: black;
   width: 300px;
-  margin: 0px 20px;
+  margin: 10px 20px;
   opacity: 1;
+} 
+
+.projects-container > .card:hover {
+  transform: translateY(-10px);
 } 
 
 .projects-container > .card > a > img {
@@ -145,10 +149,6 @@
   text-align: center;
 }
 
-.projects-container > .card:hover {
-  transform: translateY(-10px);
-} 
-
 .projects-container > .card > .container {
   padding: 25px;
   text-align: left;
@@ -159,6 +159,34 @@
 .projects-container > .card > .container > a {
   position: absolute;
   bottom: 15px;
+}
+
+/*Contact*/
+
+#contact {
+  height: auto;
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+
+#contact p {
+  margin: 30px 0px;
+}
+
+#contact a:link, a:visited {
+  background-color: lightblue;
+  color: black;
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+#contact a:hover, a:active {
+  background-color: lightseagreen;
+  color: white;
 }
 
 /*Mobile*/
