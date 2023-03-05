@@ -178,6 +178,7 @@ main {
 .projects-container > .card > .container > a {
   position: absolute;
   bottom: 15px;
+  color: black;
 }
 
 /*Group projects*/
