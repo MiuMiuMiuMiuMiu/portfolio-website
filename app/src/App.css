@@ -51,7 +51,7 @@
 
 .home-intro > h1{
   font-size: 48px;
-  margin: 20px 0px;
+  margin: 25px 0px;
  }
 
 .home-intro > h2 {
@@ -62,6 +62,40 @@
   margin-top: 30px;
   text-align: left;
   font-size: 20px;
+}
+
+/*About me*/
+#about-me {
+  background-color: lightblue;
+  height: 1000px;
+}
+
+/*Skills*/
+
+#skills {
+  height: auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#skills > h1 {
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-container > .card {
+  margin: 20px;
+}
+
+.skills-container > .card > img {
+  height: 130px;
 }
 
 /*Mobile*/

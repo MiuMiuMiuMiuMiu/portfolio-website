@@ -32,7 +32,6 @@ function Header() {
             {width >= 720
                 ?
                     <div className="navigation">
-                        <a href="#about-me">About me</a>
                         <a href="#skills">Skills</a>
                         <a href="#projects">Projects</a>
                         <a href="#contact">Contact</a>
@@ -45,7 +44,6 @@ function Header() {
                     {/* If  width is not > or = 720 and hamburger menu is open, display nav */}
                     {open &&
                         <div className="navigation">
-                            <a href="#skills">About me</a>
                             <a href="#skills">Skills</a>
                             <a href="#projects">Projects</a>
                             <a href="#contact">Contact</a>

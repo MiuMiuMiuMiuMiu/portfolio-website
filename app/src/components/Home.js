@@ -6,7 +6,7 @@ function Home() {
                 <h1>I'm Thiptida Luengprakarn.</h1>
                 <h2>I build websites.</h2>
                 <div className="home-description">
-                    <p>Graduating the Information Architecture Program at Malmö University Spring 2023!</p>
+                    <p>Graduating in spring 2023 with my Bachelor of Science in Somputer Science and Informatics!</p>
                     <p>I am a passionate learner and love challenges.</p>
                     <p>PS, I love fries 🍟</p>
                 </div>
