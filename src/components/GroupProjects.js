@@ -49,7 +49,7 @@ function GroupProjects() {
                     <p>
                         For this project we used JavaScript and React Native.
                     </p>   
-                    <a href="https://github.com/antonsandman/HealthLittApp">Github link...</a> 
+                    <p>No github link!</p>
                 </div>
 
             </div>
